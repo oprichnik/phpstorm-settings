@@ -1,0 +1,7 @@
+<templateSet group="tests">
+  <template name="assertEquals" value="static::assertEquals($END$, $SELECTION$);" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+</templateSet>

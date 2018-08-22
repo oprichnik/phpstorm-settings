@@ -1,0 +1,48 @@
+<templateSet group="Symfony">
+  <template name="oneToMany" value="$this-&gt;$$$member = [];&#10;&#10;/**&#10; * @ORM\OneToMany(targetEntity=&quot;$target$&quot;, mappedBy=&quot;$mappedBy$&quot;, cascade={&quot;persist&quot;}, orphanRemoval=true)&#10; * @var Collection|$class$[]&#10; */&#10;private $$$member$;&#10;&#10;/** return Collection|$class$[] **/&#10;public function get$methodSuffix$() {&#10;    return $this-&gt;$member$;&#10;}&#10;&#10;public function add$methodSuffix$($class$ $$$var$) {&#10;    $this-&gt;$member$-&gt;add($$$var$);&#10;}&#10;&#10;public function remove$methodSuffix$($class$ $$$var$) {&#10;    $this-&gt;$member$-&gt;add($$$var$);&#10;}" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="target" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="mappedBy" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="member" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodSuffix" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="ec" value="/** @ORM\Column(type=&quot;$type$&quot;) */&#10;private $$$member$;&#10;&#10;public function get$methodSuffix$(): ?$type$ {&#10;    return $this-&gt;$member$;&#10;}&#10;&#10;public function set$methodSuffix$(?$type$ $varName$) {&#10;    return $this-&gt;$member$;&#10;}" description="ORM column" toReformat="true" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="member" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodSuffix" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="varName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="qbe" value="echo $qb-&gt;getQuery()-&gt;getSQL();&#10;exit;$end$" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="addRemoveGet" value="/** return Collection|$class$[] **/&#10;public function get$el$() {&#10;    return $this-&gt;$collection$;&#10;}&#10;&#10;public function add$el$($class$ $$$var$) {&#10;    $this-&gt;$collection$-&gt;add($$$var$);&#10;}&#10;&#10;public function remove$el$($class$ $$$var$) {&#10;    $this-&gt;$collection$-&gt;add($$$var$);&#10;}" description="oneToMany getters/setters" toReformat="false" toShortenFQNames="true">
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="collection" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="el" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="var" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+  <template name="manyToOne" value="/**&#10; * $desc$&#10; *&#10; * @ORM\ManyToOne(targetEntity=&quot;$targetClass$&quot;)&#10; */&#10;private $$$member$;&#10;&#10;&#10;public function get$methodSuffix$(): ?$class$&#10;{&#10;    return $this-&gt;$member$;&#10;}&#10;&#10;public function set$methodSuffix$(?$class$ $$$varName$)&#10;{&#10;    $this-&gt;$member$ = $varName$;&#10;}" description="ManyToOne" toReformat="false" toShortenFQNames="true">
+    <variable name="desc" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="targetClass" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="member" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="methodSuffix" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="class" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="varName" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Class Member" value="true" />
+    </context>
+  </template>
+</templateSet>

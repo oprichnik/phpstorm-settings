@@ -1,0 +1,13 @@
+<templateSet group="Zen HTML">
+  <template name="st" value="static::" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="PHP" value="true" />
+    </context>
+  </template>
+  <template name="jcol" value=" @ORM\JoinColumns({&#10; *  @ORM\JoinColumn($end$)&#10; * })" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="PHP Comment" value="true" />
+    </context>
+  </template>
+</templateSet>

@@ -1,0 +1,30 @@
+<templateSet group="global">
+  <template name="sep" value="//######## $SELECTION$ ##########" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="sepe" value="//######## /$SELECTION$ ##########" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="JS_EXPRESSION" value="true" />
+      <option name="JS_STATEMENT" value="true" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+  <template name="sepSel" value="//######## $sectionName$ ##########&#10;&#10;$SELECTION$&#10;&#10;//######## /$sectionName$ ##########" description="" toReformat="false" toShortenFQNames="true">
+    <variable name="sectionName" expression="capitalize(String)" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="JAVA_SCRIPT" value="true" />
+      <option name="JSX_HTML" value="false" />
+      <option name="PHP Class Member" value="true" />
+      <option name="PHP Expression" value="true" />
+      <option name="PHP Statement" value="true" />
+    </context>
+  </template>
+</templateSet>

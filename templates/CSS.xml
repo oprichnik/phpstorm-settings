@@ -1,0 +1,12 @@
+<templateSet group="CSS">
+  <template name="sep" value="/***** $SELECTION$ ******/" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+  <template name="sepe" value="/***** /$SELECTION$ ******/" description="" toReformat="false" toShortenFQNames="true">
+    <context>
+      <option name="CSS_RULESET_LIST" value="true" />
+    </context>
+  </template>
+</templateSet>
