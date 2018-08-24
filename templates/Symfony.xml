@@ -10,7 +10,7 @@
       <option name="PHP Class Member" value="true" />
     </context>
   </template>
-  <template name="ec" value="/** @ORM\Column(type=&quot;$doctrineType$&quot;) */&#10;private $$$member$;&#10;&#10;public function get$methodSuffix$(): ?$type$ {&#10;    return $this-&gt;$member$;&#10;}&#10;&#10;public function set$methodSuffix$(?$type$ $varName$) {&#10;    return $this-&gt;$member$ = $$$varName$;&#10;}" description="ORM column" toReformat="true" toShortenFQNames="true">
+  <template name="ec" value="/** @ORM\Column(type=&quot;$doctrineType$&quot;) */&#10;private $$$member$;&#10;&#10;public function get$methodSuffix$(): ?$type$ {&#10;    return $this-&gt;$member$;&#10;}&#10;&#10;public function set$methodSuffix$(?$type$ $$$varName$) {&#10;    return $this-&gt;$member$ = $$$varName$;&#10;}" description="ORM column" toReformat="true" toShortenFQNames="true">
     <variable name="doctrineType" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
     <variable name="member" expression="" defaultValue="" alwaysStopAt="true" />
